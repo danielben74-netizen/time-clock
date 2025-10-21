@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>מחשבון זמן חיים - מצב כהה ואפליקציית מעבר</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="inputScreen" class="screen container">
+    <h1>מחשבון זמן חיים</h1>
+    <div class="card">
+      <h2>תאריך הלידה</h2>
+      <input type="date" id="birthDate" />
+    </div>
+    <div class="card">
+      <h2>תאריך יעד עתידי</h2>
+      <input type="date" id="futureDate" />
+    </div>
+    <button id="computeBtn" class="btn">חשב</button>
+  </div>
+
+  <div id="resultScreen" class="screen container hidden">
+    <h1>תוצאות החישוב</h1>
+    <div class="resultBlock">
+      <h2>זמן שחלף מאז הלידה</h2>  <!-- שיניתי כאן -->
+      <pre id="elapsedTime" class="digital-clock"></pre>
+    </div>
+    <div class="resultBlock">
+      <h2>זמן נשאר עד היעד</h2>
+      <pre id="remainingTime" class="digital-clock"></pre>
+    </div>
+    <button id="backBtn" class="btn">חזור</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
